@@ -8,7 +8,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
         <title>Halo</title>
-        <link rel="stylesheet" href="Halo-Project/styles">
 
         <style>
             body {
@@ -22,21 +21,29 @@
                 justify-content: center;
             }
 
+            .object-spacing {
+                height: 300px;
+            }
+
+            .bunch-of-boxes {
+                display: flex;
+                justify-content: center;
+            }
+
             .moveable-object {
                 display: inline-block;
                 background-color: white;
                 width: 100px;
                 height: 100px;
-                transition: 1s;
+                transition: 500ms;
             }
 
             .moveable-object:hover {
-                translate: 500px;
-                transform: scale(3, 3);
+                transform: scale(0.75, 0.75);
             }
 
-            .object-spacing {
-                height: 300px;
+            .moveable-object:active {
+                transform: scale(2, 2);
             }
 
         </style>
@@ -47,6 +54,8 @@
             <h1>This Is Going To Be My First Project</h1>
         </div>
         <div class="object-spacing"></div>
-        <div class="moveable-object"></div>
+        <div class="bunch-of-boxes">
+            <div class="moveable-object"></div>
+        </div>
     </body>
 </html>
